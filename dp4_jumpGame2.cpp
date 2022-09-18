@@ -27,3 +27,29 @@ public:
         return jumpOut[length-1];
     }
 };
+
+
+
+https://www.adamk.org/leetcode-45-jump-game-ii/
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int jump(vector<int>& nums) {
+    int n = nums.size();
+    if (n == 0) return 0;
+    int jumps=0, curLeft=0, nextLeft=nums[0];
+    for (int i=1; i<n; ++i) {
+        if (curLeft == 0) { curLeft = nextLeft; jumps++; }
+        curLeft--; nextLeft--;
+        if (nums[i] > nextLeft) nextLeft = nums[i];
+    }
+    return jumps;
+}
+
+int main() {
+    vector<int> nums {2,3,0,1,4}; //{1,2,3}; //{2,3,1,1,4};
+    cout << jump(nums) << "\n";
+    return 0;
+}
