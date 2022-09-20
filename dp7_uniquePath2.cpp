@@ -12,7 +12,9 @@ Return the number of possible unique paths that the robot can take to reach the 
 
 The testcases are generated so that the answer will be less than or equal to 2 * 10^9.
 
-  class Solution {
+https://leetcode.com/problems/unique-paths-ii/description/  
+  
+class Solution {
 public:
     int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
         int m = obstacleGrid.size();
