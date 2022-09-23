@@ -1,0 +1,18 @@
+https://www.geeksforgeeks.org/backtracking-algorithms/
+
+1. 백트래킹이란 무엇인가?
+
+  Backtracking can be defined as a "general algorithmic technique" 
+  that considers "searching every possible combination" in order to solve a computational problem. 
+  : 가능한 모든 combination 을 search 하는 일반적인 알고리즘을 BackTracking 이라 한다.
+
+  Backtracking is an algorithmic technique for solving problems recursively by trying to build a solution incrementally,
+  one piece at a time, removing those solutions that fail to satisfy the constraints of the problem at any point of time
+
+2. 백트래킹의 3종류
+
+  (1) Decision Problem     – In this, we search for a "feasible solution".
+  (2) Optimization Problem – In this, we search for the "best solution".
+  (3) Enumeration Problem  – In this, we find "all feasible solutions".
+  
+  
