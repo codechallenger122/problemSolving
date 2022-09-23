@@ -34,3 +34,20 @@ int main()
 
     return 0;
 }
+
+===================================
+// 다시 풀어봄. 같은 내용.
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> maxR(n);
+        int maxValue;
+        maxValue = maxR[0] = nums[0];
+        for(int i=1;i<n;i++) {
+            maxR[i] = max(maxR[i-1] + nums[i], nums[i]);
+            maxValue = max(maxValue, maxR[i]);
+        }
+        return maxValue;
+    }
+};
