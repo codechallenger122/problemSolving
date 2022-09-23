@@ -26,3 +26,8 @@ https://math-coding.tistory.com/31
     (7) erase(key) : 맵에서 key에 해당하는 원소를 제거하는 함수
                      erase 하는 방법 : 특정 position의 pair 삭제, key를 통해 삭제, 범위 삭제
     (8) clear( ) : 맵을 초기화하는 함수
+
+* index로 접근할 수 없고 iterator로 접근하여야 한다.
+  시작 : begin( ), 끝 : end( )
+  key : iter->first, value : iter->second
+  반복문 사용 시 auto 활용 or pair< key_type, value_type > 사용
