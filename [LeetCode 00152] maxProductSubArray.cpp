@@ -15,3 +15,6 @@ public:
         return maxValue;
     }   
 };
+
+여기서 maxR[i], minR[i] 는 Right component <-- i번째 component 를 포함하는 max 값, min 값임.
+    이 값들을 정의하는 이유는 이렇게 정의해야 다음 번 maxR[i+1], minR[i+1] 에 사용할 수 있기 때문이다. 
