@@ -23,6 +23,13 @@ https://math-coding.tistory.com/31
                     if key is contained, return 1 else 0
     (6) insert( {key, value} ) : 맵에 pair<key,value> 를 추가하는 함수
                     if key is contained, then not insert
+                    
+                    ex) unordered_map<string, int> map;
+                        map.insert(make_pair("key",1));  // 1번째
+                        map["banana"]=2;                 // 2번째
+                        map.insert({"melon",3});         // 3번째 방법.
+                       
+                    
     (7) erase(key) : 맵에서 key에 해당하는 원소를 제거하는 함수
                      erase 하는 방법 : 특정 position의 pair 삭제, key를 통해 삭제, 범위 삭제
     (8) clear( ) : 맵을 초기화하는 함수
